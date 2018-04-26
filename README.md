@@ -18,7 +18,10 @@ $ npm install -g mongoose-to-typescript
 ```
 
 ## Usage
-Generates a typescript class:
+##### Model naming convention
+The model files must be as follow classNameModel.js (for example AuthorizedWeightCategoryModel.js)
+##### CLI
+Generates a typescript class from a mongoose model file:
 ```bash
 $ sudo mongoose-to-typescript -p ./models/ -m -o ./output
   Created AuthorizedWeightCategory.ts
@@ -31,7 +34,6 @@ $ sudo mongoose-to-typescript -p ./models/ -m -o ./output
   Created Policy.ts
   Created Position.ts
 ```
-
 ##### Options
 
   `-V, --version` - output the version number\
