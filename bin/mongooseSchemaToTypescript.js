@@ -39,7 +39,7 @@ program
             Boolean: "true"
         };
 
-        fs.mkdir(process.cwd() + program.output, null, () => {
+        fs.mkdir(process.cwd() + "/" + program.output, null, () => {
             fs.readFile(pathMethod.join(__dirname, '..', 'classTemplate.ts'), "utf-8", (err, content) => {
                 fs.readdir(process.cwd() + "/" + program.path, (err, files) => {
                     files.forEach(file => {
@@ -48,9 +48,9 @@ program
                         className = className.replace(".js", "");
                         try {
                             if (program.model)
-                                var schema = require(process.cwd() + program.path + "/" + file).schema;
+                                var schema = require(process.cwd() + "/" +  program.path + "/" + file).schema;
                             else
-                                var schema = require(process.cwd() + program.path + "/" + file);
+                                var schema = require(process.cwd() + "/" +  program.path + "/" + file);
                             var replacerTab = {imports: "", props: "", className: className};
                             var importedAddress = false;
                             // console.log(schema);
