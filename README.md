@@ -20,7 +20,7 @@ $ npm install -g mongoose-to-typescript
 ## Usage
 Generates a typescript class:
 ```bash
-$ sudo ./bin/mongooseSchemaToTypescript.js -p ./models/ -m -o ./output
+$ sudo mongoose-to-typescript -p ./models/ -m -o ./output
   Created AuthorizedWeightCategory.ts
   Created AutoSinister.ts
   Created BusinessProvider.ts
@@ -51,7 +51,7 @@ $ sudo ./bin/mongooseSchemaToTypescript.js -p ./models/ -m -o ./output
 
 
 ## Rendering
-output/Customer.ts :
+output/Vehicle.ts :
 ```typescript
 import VehicleBrand from './VehicleBrand';
 import VehicleModel from './VehicleModel';
