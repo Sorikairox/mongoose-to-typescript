@@ -1,0 +1,22 @@
+{
+  "name": "mongoose-to-typescript",
+  "version": "1.0.0",
+  "description": "Translate mongoose model to typescript class",
+  "main": "./bin/mongooseSchemaToTypescript.js",
+  "bin": {
+    "mongoose-to-typescript": "mongooseSchemaToTypescript.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mongoose",
+    "typescript",
+    "translate"
+  ],
+  "author": "Thomas CRUVEILHER",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.15.1"
+  }
+}
