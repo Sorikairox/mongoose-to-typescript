@@ -17,8 +17,7 @@ $ npm install -g mongoose-to-typescript
 ```
 
 ## Usage
-### Non-Interactive mode
-Generates a Mongoose model, a REST controller and Express router :
+Generates a typescript class:
 ```bash
 $ sudo ./bin/mongooseSchemaToTypescript.js -p ./models/ -m -o ./output
   Created AuthorizedWeightCategory.ts
