@@ -8,6 +8,7 @@ It works with (MongooseType : TypescriptType):
 - Date : Date
 - Array : Array
 - ObjectID (not _id) : Referenced model class
+- ObjectID (_id) : string
 
 It assigns default value for each variable (especially classes instances, so you don't have any errors in angular with a damn object being undefined.
 )
@@ -63,6 +64,7 @@ class Vehicle
     public model : VehicleModel = VehicleModel();
     public immatriculation : string = "";
     public owner : Customer = Customer();
+    public _id : string = "";
     }
 ```
 
