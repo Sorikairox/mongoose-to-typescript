@@ -14,9 +14,11 @@
     "typescript",
     "translate"
   ],
+  "repository": "https://github.com/Sorikairox/mongoose-to-typescript",
   "author": "Thomas CRUVEILHER",
   "license": "MIT",
   "dependencies": {
+    "colors": "^1.2.1",
     "commander": "^2.15.1"
   }
 }
