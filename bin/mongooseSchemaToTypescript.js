@@ -39,8 +39,7 @@ program
             Boolean: "true"
         };
 
-        console.log(process.cwd());
-        fs.mkdir(path + program.output, null, () => {
+        fs.mkdir(process.cwd() + program.output, null, () => {
             fs.readFile(pathMethod.join(__dirname, '..', 'classTemplate.ts'), "utf-8", (err, content) => {
                 fs.readdir(process.cwd() + "/" + program.path, (err, files) => {
                     files.forEach(file => {
