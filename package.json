@@ -4,7 +4,7 @@
   "description": "Translate mongoose model to typescript class",
   "main": "./bin/mongooseSchemaToTypescript.js",
   "bin": {
-    "mongoose-to-typescript": "mongooseSchemaToTypescript.js"
+    "mongoose-to-typescript": "./bin/mongooseSchemaToTypescript.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
