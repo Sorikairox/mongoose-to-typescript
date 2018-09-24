@@ -1,7 +1,7 @@
 {{imports}}
 
 
-class {{className}}
+export class {{className}}
 {
     {{props}}
 
