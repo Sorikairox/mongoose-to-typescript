@@ -63,12 +63,12 @@ program
                                 else if (property.includes("address") || property.includes("Address")) {
                                     replacerTab.props += "public " + property + " : Address = Address();\n";
                                     if (!importedAddress)
-                                        replacerTab.imports += "import Adress from './Address';\n";
+                                        replacerTab.imports += "import {Adress} from './Address';\n";
                                     importedAddress = true;
                                 }
                                 else {
-                                    replacerTab.props += "public " + property + " : " + schema.paths[property].options.ref + " = " + schema.paths[property].options.ref + "()" + ";\n";
-                                    replacerTab.imports += "import " + schema.paths[property].options.ref + " from './" + schema.paths[property].options.ref + "';\n";
+                                    replacerTab.props += "public " + property + " : " + schema.paths[property].options.ref + " = new " + schema.paths[property].options.ref + "()" + ";\n";
+                                    replacerTab.imports += "import {" + schema.paths[property].options.ref + "} from './" + schema.paths[property].options.ref + "';\n";
                                 }
                             }
                             for (let property in replacerTab) {
